@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+vita_token = "BN3cXU7X7DeVEDvUBCpr5oZMiM2VoLJyE5zrZuyEWnqs"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/braeden/.config/solana/devnet.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

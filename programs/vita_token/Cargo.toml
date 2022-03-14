@@ -1,0 +1,24 @@
+[package]
+name = "vita_token"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "vita_token"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.21.0"
+anchor-spl = "0.21.0"
+anchor-spl-token-metadata = "0.1.1"
+spl-token = { version = "3.1.1", features = ["no-entrypoint"] }
+solana-program = "1.9.2"
+mpl-token-metadata = { git = "https://github.com/metaplex-foundation/metaplex-program-library", features = [ "no-entrypoint" ] }
